@@ -1,0 +1,2 @@
+user_name="postgres"
+user_password="123qweASD"
