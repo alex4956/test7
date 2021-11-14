@@ -1,5 +1,3 @@
-superuser_password = "m5021G4956!$"
-
 import psycopg2
 from psycopg2 import Error
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
@@ -23,7 +21,7 @@ print('Модуль test_functions')
 
 
 def create_connection_postgresql(user_name, user_password):
-    if len(superuser_password) == 0:
+    if len(user_password) == 0:
         print('Не указан пароль суперюзера postres в первой строчке файла test_functions.py')
         exit()
     try:
